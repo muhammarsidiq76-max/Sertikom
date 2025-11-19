@@ -1,0 +1,55 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.78)) ,url(../../Asset/Img/teknologi.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.projects img {
+  height: 250px;
+}
+
+/* Navbar scroll styles */
+.navbar {
+  background-color: transparent; /* start transparent over hero */
+  transition: background-color 250ms ease, box-shadow 250ms ease;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar i {
+  transition: color 200ms ease;
+  color: #000000; /* default text color while over hero */
+}
+
+/* When page is scrolled, toggle this class (handled by script.js) */
+.navbar.scrolling-active {
+  background-color: #ffffff; /* navbar background after scroll */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.navbar.scrolling-active .nav-link,
+.navbar.scrolling-active .navbar-brand,
+.navbar.scrolling-active i {
+  color: #222 !important; /* dark text over white bg */
+}
+
+/* Optional: make toggler button visible on white bg */
+.navbar.scrolling-active .navbar-toggler {
+  border-color: rgba(0,0,0,0.1);
+}
+
+/* small tweak: ensure navbar links have clear hit area */
+.navbar .nav-link {
+  padding: 0.5rem 0.75rem;
+}
+.navbar.scrolling-active {
+  background-color: #0d6efd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
