@@ -1,9 +1,20 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+.navbar {
+  padding-left: 200px;
+  padding: 20px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Logo img {
+  width: 100px;
+  height: auto;
+}
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.78)) ,url(../../Asset/Img/teknologi.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.78)) ,url(../../Asset/Img/nice.jpg);
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -49,7 +60,17 @@
   padding: 0.5rem 0.75rem;
 }
 .navbar.scrolling-active {
-  background-color: #0d6efd;
+  background-color: #e35b00;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, box-shadow 0.3s;
+}
+.img-fluid {
+  width: 500%;
+  height: auto;
+}
+.icon-box img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
 }
