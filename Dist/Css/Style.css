@@ -14,7 +14,8 @@
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.78)) ,url(../../Asset/Img/nice.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.78)),
+    url(../../Asset/Img/nice.jpg);
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -41,7 +42,7 @@
 /* When page is scrolled, toggle this class (handled by script.js) */
 .navbar.scrolling-active {
   background-color: #ffffff; /* navbar background after scroll */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .navbar.scrolling-active .nav-link,
@@ -52,7 +53,7 @@
 
 /* Optional: make toggler button visible on white bg */
 .navbar.scrolling-active .navbar-toggler {
-  border-color: rgba(0,0,0,0.1);
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 /* small tweak: ensure navbar links have clear hit area */
@@ -76,117 +77,117 @@
 }
 
 .features-collection .feature-item {
-    background-color: #19875480;
-    padding: 32px;
-    border-radius: 8px;
-    transition: all 0.4s ease;
-    border: 1px solid transparent;
+  background-color: #19875480;
+  padding: 32px;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+  border: 1px solid transparent;
 }
 
 /* Reset Dasar */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
 
-        /* Container Utama */
-        .card-container {
-            display: flex;
-            gap: 30px;
-            max-width: 1200px;
-            width: 100%;
-            flex-wrap: wrap; /* Agar responsif di layar kecil */
-        }
+/* Container Utama */
+.card-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
 
-        /* Styling Kartu */
-        .card {
-            background: #ffffff;
-            border: 1px solid #eaecf0; /* Border abu-abu sangat tipis */
-            border-radius: 8px;
-            padding: 32px;
-            flex: 1; /* Agar lebar kartu seragam */
-            min-width: 300px; /* Lebar minimum sebelum wrap ke bawah */
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            transition: box-shadow 0.3s ease;
-        }
+/* Styling Kartu */
+.card {
+  background: #ffffff;
+  border: 1px solid #eaecf0;
+  /*Borderabu-abusangattipis*/
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  /*Agarlebarkartuseragam*/
+  min-width: 300px;
+  /*Lebarminimumsebelumwrapkebawah*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.3s ease;
+  gap: 20px;
+}
 
-        .card:hover {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
 
-        /* Kotak Ikon */
-        .icon-box {
-            background-color: #eff6ff; /* Biru sangat muda */
-            width: 48px;
-            height: 48px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 24px;
-        }
+/* Kotak Ikon */
+.icon-box {
+  background-color: #eff6ff; /* Biru sangat muda */
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
 
-        .icon-box svg {
-            width: 24px;
-            height: 24px;
-            color: #19875480; /* Warna  Utama */
-            stroke: currentColor;
-            stroke-width: 2;
-            fill: none;
-        }
+.icon-box svg {
+  width: 24px;
+  height: 24px;
+  color: #19875480; /* Warna  Utama */
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}
 
-        /* Judul */
-        .card h3 {
-            font-size: 20px;
-            font-weight: 600;
-            color: #111827; /* Hitam pekat */
-            margin-bottom: 12px;
-        }
+/* Judul */
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827; /* Hitam pekat */
+  margin-bottom: 12px;
+}
 
-        /* Teks Deskripsi */
-        .card p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #6b7280; /* Abu-abu teks */
-            margin-bottom: 24px;
-            flex-grow: 1; /* Mendorong link ke bawah agar sejajar */
-        }
+/* Teks Deskripsi */
+.card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #6b7280; /* Abu-abu teks */
+  margin-bottom: 24px;
+  flex-grow: 1; /* Mendorong link ke bawah agar sejajar */
+}
 
-        /* Link Learn More */
-        .learn-more {
-            text-decoration: none;
-            color: #19875480; /* Warna Biru Utama */
-            font-weight: 600;
-            font-size: 15px;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            transition: gap 0.2s ease;
-        }
+/* Link Learn More */
+.learn-more {
+  text-decoration: none;
+  color: #19875480; /* Warna Biru Utama */
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s ease;
+}
 
-        .learn-more:hover {
-            gap: 10px; /* Efek panah bergerak saat hover */
-        }
+.learn-more:hover {
+  gap: 10px; /* Efek panah bergerak saat hover */
+}
 
-        .learn-more svg {
-            width: 18px;
-            height: 18px;
-            stroke-width: 2;
-        }
+.learn-more svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2;
+}
 
-  .card-container {
-   margin: 12px auto;
+.card-container {
+  margin: 12px auto;
   width: 50%;
   padding: 10px;
   display: flex; /* keep layout same but re-enable gap */
-  gap: 18px;     /* small spacing between cards without changing their size */
+  gap: 18px; /* small spacing between cards without changing their size */
   flex-wrap: wrap;
-  }
+}
 
-        * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -194,7 +195,6 @@
 }
 .container {
   max-width: 1100px;
-  margin: auto;
 }
 .tittle {
   text-align: center;
@@ -223,7 +223,7 @@
   color: #ffffff;
   border-color: #19875480;
 }
-.gallery {
+.Projek {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -262,4 +262,122 @@
   padding: 8px 0;
 }
 
+:root {
+  --primary-orange: #19875480; /* Warna oranye sesuai gambar */
+  --light-bg-input: #f3f4f6;
+}
 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Styling untuk Peta agar full height */
+.map-container {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Styling Kartu Kontak (Location, Email, dll) */
+.contact-card {
+  background: #19875480;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  align-items: start;
+  gap: 15px;
+}
+
+.icon-box {
+  background-color: #ffffff; /* Oranye sangat muda */
+  color: var(--primary-orange);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.contact-label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.contact-text {
+  color: #272626;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Styling Bagian Form */
+.form-section {
+  background: #19875480;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
+}
+
+.section-title {
+  border-left: 5px solid var(--primary-orange);
+  padding-left: 15px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  background-color: var(--light-bg-input);
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  box-shadow: 0 0 0 2px var(--primary-orange);
+}
+
+.btn-orange {
+  background-color: var(--primary-orange);
+  color: #00ff88bc;
+  padding: 12px 30px;
+  border-radius: 30px; /* Membuat tombol bulat */
+  font-weight: 600;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-orange:hover {
+  background-color: #19875480;
+  color: #ffffff;
+}
+
+/* Responsive padding */
+.right-column {
+  padding: 40px;
+}
+
+@media (max-width: 991px) {
+  .map-container {
+    min-height: 400px; /* Tinggi peta di mobile */
+  }
+  .right-column {
+    padding: 20px;
+  }
+}
