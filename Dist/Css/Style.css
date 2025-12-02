@@ -78,7 +78,7 @@
 
 .features-collection .feature-item {
   background-color: #19875480;
-  padding: 32px;
+  padding: 20px;
   border-radius: 8px;
   transition: all 0.4s ease;
   border: 1px solid transparent;
@@ -259,7 +259,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 8px 0;
+  padding: 20px 0;
 }
 
 :root {
@@ -381,3 +381,313 @@ body {
     padding: 20px;
   }
 }
+
+/* Reset Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: #555;
+            line-height: 1.6;
+            
+        }
+
+        /* Variabel Warna */
+        :root {
+            --primary-orange: #19875480; /* Warna oranye dari gambar */
+            --light-orange-bg: #fffbf5;
+            --text-dark: #222;
+            --text-gray: #666;
+        }
+
+        /* Header Section "ABOUT" */
+        .section-header {
+            margin-bottom: 40px;
+        }
+
+        .section-header h4 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-dark);
+            display: inline-block;
+            position: relative;
+            font-weight: 700;
+        }
+        
+        /* Garis di sebelah tulisan ABOUT */
+        .section-header h4::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 60px; /* Jarak garis dari teks */
+            width: 50px;
+            height: 2px;
+            background-color: var(--primary-orange);
+        }
+
+        .section-header p {
+            font-size: 13px;
+            color: #999;
+            margin-top: 5px;
+        }
+
+        /* Container Utama */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            margin: 0 auto;
+        }
+
+        /* Kolom Kiri (Gambar) */
+        .image-col {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 80%;
+            border-radius: 15px; /* Sudut melengkung */
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Kotak Oranye (Projects) */
+        .badge-projects {
+            position: absolute;
+            top: 30px;
+            right: -20px; /* Membuatnya sedikit keluar frame */
+            background-color: var(--primary-orange);
+            color: white;
+            padding: 20px 25px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(234, 142, 24, 0.4);
+        }
+
+        .badge-projects h3 {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .badge-projects span {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        /* Kotak Putih (Years) */
+        .badge-years {
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            background-color: white;
+            padding: 20px 30px;
+            border-radius: 5px; /* Hanya sudut atas */
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            min-width: 120px;
+        }
+
+        .badge-years h3 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--primary-orange);
+            line-height: 1;
+        }
+
+        .badge-years span {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--text-dark);
+        }
+
+        /* Kolom Kanan (Konten) */
+        .content-col {
+            flex: 1;
+            min-width: 300px;
+            padding-top: 20px;
+        }
+
+        .content-col h1 {
+            font-size: 36px;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .content-col > p {
+            margin-bottom: 30px;
+            color: var(--text-gray);
+        }
+
+        /* Fitur Box (Icon + Teks) */
+        .feature-box {
+            background-color: var(--light-orange-bg);
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .icon-wrapper {
+            background-color: #ffffff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .icon-wrapper i {
+            color: var(--primary-orange);
+            font-size: 20px;
+        }
+
+        .feature-text h5 {
+            font-size: 18px;
+            color: var(--text-dark);
+            margin-bottom: 5px;
+        }
+
+        .feature-text p {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        /* Checklist */
+        .checklist {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .checklist li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        .checklist li i {
+            color: var(--primary-orange);
+        }
+
+        /* Tombol */
+        .btn-learn {
+            background-color: var(--primary-orange);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 14px;
+        }
+
+        .btn-learn:hover {
+            background-color: #19875480;
+        }
+
+        /* Responsif untuk Mobile */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .badge-projects {
+                right: 0; /* Rapikan posisi di mobile */
+            }
+            
+            .section-header h4::after {
+                display: none; /* Hilangkan garis di mobile jika sempit */
+            }
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa; /* Background abu-abu muda agar kartu terlihat */
+        }
+
+        /* Styling Custom untuk Kartu */
+        .service-card {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 16px; /* Sudut melengkung */
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Bayangan halus */
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px); /* Efek naik saat di-hover */
+        }
+
+        /* Styling Ikon Bulat */
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            background-color: #19875480; /* Warna Hijau Utama */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .icon-box i {
+            font-size: 28px;
+            color: #ffffff;
+        }
+
+        /* Judul Kartu */
+        .card-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+
+        /* Teks Deskripsi */
+        .card-text {
+            color: #6c757d; /* Abu-abu Bootstrap */
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Bagian Footer Angka (Garis + Nomor) */
+        .card-number-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .number-line {
+            width: 50px;
+            height: 1px;
+            background-color: #19875480;
+            margin-right: 10px;
+        }
+
+        .number-text {
+            color: #19875480;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
